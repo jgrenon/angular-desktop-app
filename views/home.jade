@@ -1,0 +1,16 @@
+.page-header
+  .title Angular Desktop App
+
+.navbar.navbar-fixed-bottom.navbar-inverse(role="navigation")
+  .navbar-header
+    .navbar-brand: a(href="#"): Angular Desktop App
+  ul.nav.navbar-nav.pull-right(ng-show="authenticated")
+    li.dropdown
+      a.dropdown-toggle(href="#", data-toggle='dropdown')
+        | {{username}}
+        b.caret
+      ul.dropdown-menu
+        li: a(href="#") Quit
+
+.container
+  p.lead This is a basic AngularJS application hosted in Node Webkit. You now have access to Bootstrap 3, AngularJS 1.2.3, Node-WebKit 0.8.1 and a lot of different librairies through Bower an Require.js.
