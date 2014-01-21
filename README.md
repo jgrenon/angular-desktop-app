@@ -51,3 +51,7 @@ would also be nice. I'll contribute a few myself as I continue the implementatio
 - Expose node-webkit menubar as Angular service
 - Expose node-webkit notification area
 - Expose node-webkit Window
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jgrenon/angular-desktop-app/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
