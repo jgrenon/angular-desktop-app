@@ -1,5 +1,7 @@
 # Angular Desktop App
 
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jgrenon/angular-desktop-app/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 This is a simple application skeleton to create desktop application using AngularJS. This application is using node-webkit as our desktop host,
 bower to install client-side libraries as well as normal npm modules as supported by node-webkit.
 
@@ -51,7 +53,4 @@ would also be nice. I'll contribute a few myself as I continue the implementatio
 - Expose node-webkit menubar as Angular service
 - Expose node-webkit notification area
 - Expose node-webkit Window
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jgrenon/angular-desktop-app/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
