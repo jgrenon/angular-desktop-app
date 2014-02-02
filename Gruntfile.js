@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         shell: {
             install: {
                 command: function() {
-                    return 'bower install && cd src && npm install';
+                    return 'bower cache clean && bower install && cd src && npm install';
                 },
                 options: {
                     stdout: true,
