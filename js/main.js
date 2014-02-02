@@ -16,7 +16,7 @@ requirejs.config({
         'angular-bootstrap':'../lib/angular-bootstrap/ui-bootstrap',
         'angular-bootstrap-tmpls': '../lib/angular-bootstrap/ui-bootstrap-tpls',
         'firebase': '../lib/firebase/firebase',
-        'angular-fire': '../lib/angular-fire/angularfire.min'
+        'angularfire': '../lib/angularfire/angularfire.min'
     },
 
     /**
@@ -42,7 +42,7 @@ requirejs.config({
         'angular-bootstrap':{
             deps:['angular', '$', 'angular-bootstrap-tmpls']
         },
-        'angular-fire':{
+        'angularfire':{
             deps:['angular','firebase']
         }
     },
