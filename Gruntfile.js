@@ -16,8 +16,14 @@ if (isLinux64)
 
 var nwVer = '0.8.4';
 
-var nwExec = "cd cache/" + os + "/" + nwVer + " && nw ../../../src";
-console.log(nwExec);
+var nwExec = "";
+
+if (!isMac)
+    nwExec = "cd cache/" + os + "/" + nwVer + " && nw ../../../src";
+else
+    nwExec = "cd cache/" + os + "/" + nwVer + " && open -n -a node-webkit ../../../src";
+
+
 console.log("OS: " + os);
 
 module.exports = function(grunt) {
