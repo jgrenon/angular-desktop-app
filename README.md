@@ -42,11 +42,11 @@ to get a feel of how we render Jade views in the node-webkit app.
 
 ## Packaging
 
-To package your application, simply run ***grunt build** from the application root.
+To package your application, simply run **grunt build** from the application root.
 
 Check ```releases/<platform>``` for the finished product.
 
-** Known Issue ** - Decompressing the executable takes time, sometimes large programs may be slow to start.
+**Known Issue** - Decompressing the executable takes time, sometimes large programs may be slow to start.
 
 ## Next Steps
 
