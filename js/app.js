@@ -6,7 +6,7 @@ define([
     'angular',
     'angularRoute',
     'angular-bootstrap',
-    'angular-fire',
+    'angularfire',
     './controllers/index',
     './directives/index',
     './filters/index',
