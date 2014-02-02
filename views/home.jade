@@ -7,7 +7,7 @@
   ul.nav.navbar-nav.pull-right(ng-show="authenticated")
     li.dropdown
       a.dropdown-toggle(href="#", data-toggle='dropdown')
-        | {{username}}
+        | {{user.name}}
         b.caret
       ul.dropdown-menu
         li: a(href="#") Quit
