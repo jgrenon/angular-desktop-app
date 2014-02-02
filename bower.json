@@ -10,13 +10,13 @@
     "angular": "~1.2.3",
     "requirejs": "~2.1.9",
     "requirejs-domready": "~2.0.1",
-    "angular-route": "1.2.0-rc.3",
+    "angular-route": "~1.2.3",
     "requirejs-text": "~2.0.10",
     "lodash": "~2.2.1",
-    "less": "~1.5.0",
+    "less": "~1.5.1",
     "jquery": "~2.0.3",
-    "angular-fire": "~0.3.1",
+    "angularfire": "~0.6.0",
     "firebase": "*",
-    "angular-bootstrap": "~0.7.0"
+    "angular-bootstrap": "~0.10.0"
   }
 }
