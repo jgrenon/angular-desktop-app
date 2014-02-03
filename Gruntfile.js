@@ -31,7 +31,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('./package.json'),
         less: {
-            './public/css/app.css': ['./src/css/app.less']
+            './src/css/app.css': ['./src/css/app.less']
         },
         nodewebkit: {
             options: {
