@@ -3,4 +3,6 @@ lib
 *.db
 data
 .idea
+releases/
+cache/
 
