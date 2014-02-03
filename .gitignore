@@ -1,8 +1,14 @@
 node_modules
-lib
+/src/lib
 *.db
 data
 .idea
 releases/
 cache/
+
+/cache
+/releases
+
+nbproject
+lib/
 

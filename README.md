@@ -12,15 +12,14 @@ Everything is dynamically loaded through require.js, to ensure that all Angular 
 ## Getting Started
 
 1. Fork this repository and clone it to your local disk.
-2. Install (https://github.com/rogerwang/node-webkit)[node-webkit] using the installer for your platform.
-3. In the application root, execute **npm install**
-4. In the application root, execute **bower install**
-5. On the Mac, you can launch the app by running **./bin/run.sh**. On other platforms, refer to node-webkit for platform-specific instructions.
+2. In the application root, execute **npm install && grunt install**. Node-Webkit will be installed locally under ```cache/<platform>/<version>```.
+3. To run your application, execute **grunt run**. 
+
 
 ## More Details
 
-The application is launch and index.html is loaded. I'm using LESS loaded directly in the application main file to render all stylesheets. The default stylesheet is located in
-./css and includes bootstrap 3.0. No need to add bootstrap, you just get all bootstrap controls, grid and features. We're declaring the ng-view element which will act as a placeholder
+The application is launch and index.html is loaded. Grunt uses LESS to render all stylesheets. The default stylesheet is located in
+./css/app.less and includes bootstrap 3.0. No need to add bootstrap, you just get all bootstrap controls, grid and features. We're declaring the ng-view element which will act as a placeholder
 for Angular views. After that, we bootstrap require.js by loading the  js/main.js file. No other JS files are loaded statically. Everything else is loaded through require.js as described
 in main.js
 
@@ -41,16 +40,22 @@ controller and the actual view in each route. Views are created using Jade and c
 node-webkit, to render Jade templates when requested. For now, this is very basic, but this could be enhanced to support better caching, parameters, etc. Have a look at the viewProvider service
 to get a feel of how we render Jade views in the node-webkit app.
 
+## Packaging
+
+To package your application, simply run **grunt build** from the application root.
+
+Check ```releases/<platform>``` for the finished product.
+
+**Known Issue** - Decompressing the executable takes time, sometimes large programs may be slow to start.
+
 ## Next Steps
 
 Feel free to contribute pull requests to improve this frame. Adding grunt to launch the app would be nice, adding Jasmine tests, exposing various Node-webkit features as Angular services
 would also be nice. I'll contribute a few myself as I continue the implementation of my own app for my Vibes.IO cloud platform.
 
 - Add Jasmine Tests
-- Add Grunt support (launch and package app)
 - Integrate Server Side communication pattern (through Angular service, socket.io?)
 - Add better database abstraction for model objects
 - Expose node-webkit menubar as Angular service
 - Expose node-webkit notification area
-- Expose node-webkit Window
 
