@@ -3,6 +3,14 @@
   "description": "Desktop application developed using AngularJS and web technologies. Powered by node-webkit",
   "version": "1.1.0",
   "main": "index.html",
+  "author":{
+      "name": "Joel Grenon",
+      "url": "https://github.com/jgrenon"
+  },
+  "contributors":[{
+        "name": "Tom Lawson",
+        "url" : "https://github.com/talss89"
+    }],
   "window": {
     "toolbar": true,
     "width": 1200,

@@ -2,6 +2,10 @@
   "name": "angular-desktop-app-build",
   "description": "Angular-Desktop-App Build System",
   "version": "1.1.0",
+  "author":{
+      "name": "Tom Lawson",
+      "url" : "https://github.com/talss89"
+  },
   "dependencies": {
   },
   "devDependencies": {
