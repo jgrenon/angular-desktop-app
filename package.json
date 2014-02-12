@@ -3,7 +3,7 @@
   "description": "Angular-Desktop-App Build System",
   "version": "1.1.0",
   "author":{
-      "name": "Tom Lawson",
+      "name": "Tom Lawton",
       "url" : "https://github.com/talss89"
   },
   "dependencies": {
