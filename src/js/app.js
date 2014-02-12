@@ -2,17 +2,17 @@
  * loads sub modules and wraps them up into the main module
  * this should be used for top-level module definitions only
  */
-define([
+define("app", [
     'angular',
-    'angularRoute',
+    'angular-ui-router',
     'angular-bootstrap',
-    'angularfire',
+    'text!',
     './controllers/index',
     './directives/index',
     './filters/index',
     './services/index',
     './views/index',
-    'text'
+    './states/index'
 ], function (ng) {
     'use strict';
 
@@ -22,12 +22,11 @@ define([
         'app.filters',
         'app.directives',
         'app.views',
-        'ngRoute',
+        'app.states',
         'ui.bootstrap',
         "ui.bootstrap.tpls",
-        "firebase"
-    ]).run(function($location) {
-        // Go to home view
-        $location.path('/home');
+        'ui.router'
+    ]).run(function($state) {
+        $state.go('home');
     });
 });

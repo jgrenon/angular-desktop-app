@@ -9,6 +9,14 @@ This is a work in progress and there are currently no test available yet. More f
 
 Everything is dynamically loaded through require.js, to ensure that all Angular components are kept separated in separate folders.
 
+# Release Notes
+
+- [1.1.0 - 2014-02-12]:
+    + Migrate project to angular-ui-router, which is much more aligned with managing complex UI state, which is required for rich desktop app. New modular way
+        to declare states (routes) following the exact same pattern we use for other angular modules. See navigation documentation for more details.
+    + Integrated Grunt in the project (thanks to [Tom Lawton](https://github.com/talss89)
+
+
 ## Getting Started
 
 ### 1. Get the source code
@@ -56,10 +64,13 @@ declares all component files. This ensures that all files are loaded automatical
 
 ## Navigation
 
-Navigation in a desktop application is different from a web app. The navigation is performed by Angular and all available routes are declared in ./js/routes.js. We have to specify the
-controller and the actual view in each route. Views are created using Jade and contained in the ./views folder. We've created an hybrid Angular service, which use the node.js capabilities or
-node-webkit, to render Jade templates when requested. For now, this is very basic, but this could be enhanced to support better caching, parameters, etc. Have a look at the viewProvider service
-to get a feel of how we render Jade views in the node-webkit app.
+Application navigation is powered by the angular-ui-router module. This module manages hierarchical ui state and offer a very powerful way to structure complex ui. For example, we now support
+nested views and multi views (multiple ui-view placeholder in the application). This is much more aligned with common desktop app needs.
+
+### Declaring a new state
+A state is a particular location in the application UI. We have grouped all routes into the app.states module (js/states/main.js). The main file contains top-level states that can be referenced
+from anywhere in controllers by using `$state.go('signup')`. You can added more top-level states in this file or create additional files (dialogs.js, security.js) to group new state together. Just
+remember to add your file to the dependency list of the index.js file. Follow the main.js structure and your new state will be available in your application.
 
 ## Packaging
 

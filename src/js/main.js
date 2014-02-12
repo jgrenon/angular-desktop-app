@@ -8,15 +8,13 @@ requirejs.config({
     paths: {
         'domReady': '../lib/requirejs-domready/domReady',
         'angular': '../lib/angular/angular',
-        'angularRoute': '../lib/angular-route/angular-route',
+        'angular-ui-router': '../lib/angular-ui-router/release/angular-ui-router',
         'handlebars': '../lib/handlebars/handlebars',
         'text': '../lib/requirejs-text/text',
         '_': '../lib/lodash/dist/lodash',
         '$': '../lib/jquery/jquery',
         'angular-bootstrap':'../lib/angular-bootstrap/ui-bootstrap',
-        'angular-bootstrap-tmpls': '../lib/angular-bootstrap/ui-bootstrap-tpls',
-        'firebase': '../lib/firebase/firebase',
-        'angularfire': '../lib/angularfire/angularfire.min'
+        'angular-bootstrap-tmpls': '../lib/angular-bootstrap/ui-bootstrap-tpls'
     },
 
     /**
@@ -27,7 +25,7 @@ requirejs.config({
         'angular':{
             exports: 'angular'
         },
-        'angularRoute':{
+        'angular-ui-router':{
             deps:['angular']
         },
         'handlebars':{
@@ -41,9 +39,6 @@ requirejs.config({
         },
         'angular-bootstrap':{
             deps:['angular', '$', 'angular-bootstrap-tmpls']
-        },
-        'angularfire':{
-            deps:['angular','firebase']
         }
     },
 

@@ -3,24 +3,23 @@
  * The routes you see here will be anchors '#/' unless specifically configured otherwise.
  */
 
-define(['./app'], function (app) {
+define(['./module'], function (states) {
     'use strict';
 
-    return app.config(['$routeProvider', 'viewProvider', function ($routeProvider, viewProvider) {
+    return states.config(['$stateProvider', '$urlRouterProvider', 'viewProvider', function ($stateProvider, $urlRouterProvider, viewProvider) {
 
-        $routeProvider.when('/signup', {
+        $stateProvider.state('signup', {
+            url: '/signup',
             template: viewProvider.renderView('signup'),
             controller: 'SignupCtrl'
         });
 
-        $routeProvider.when('/home', {
+        $stateProvider.state('home', {
+            url:'/home',
             template: viewProvider.renderView('home'),
             controller: 'HomeCtrl'
         });
 
-        $routeProvider.otherwise({
-            redirectTo: '/home'
-        });
-
+        $urlRouterProvider.otherwise('/home');
     }]);
 });

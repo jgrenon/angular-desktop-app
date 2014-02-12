@@ -1,9 +1,7 @@
 define(['./module'], function (controllers) {
     'use strict';
 
-    var gui = require('nw.gui');
-
-    controllers.controller('SignupCtrl', ['$scope', 'securityService', '$location', function ($scope, securityService, $location) {
+    controllers.controller('SignupCtrl', ['$scope', 'securityService', '$location', 'nwService', function ($scope, securityService, $location, nwService) {
 
         securityService.hasValidToken().then(function(hasToken) {
             $scope.authenticated = hasToken;
@@ -21,7 +19,7 @@ define(['./module'], function (controllers) {
                 });
 
                 // Open the verification URL in an externalBrowser window
-                var win = gui.Window.open("https://api.twitter.com/oauth/authorize?oauth_token="+resp.oauth_token+"&oauth_token_secret="+resp.oauth_token_secret, {
+                var win = nwService.gui.Window.open("https://api.twitter.com/oauth/authorize?oauth_token="+resp.oauth_token+"&oauth_token_secret="+resp.oauth_token_secret, {
                     position: 'center',
                     width: 600,
                     height: 450,
