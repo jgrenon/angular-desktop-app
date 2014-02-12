@@ -14,7 +14,7 @@ Everything is dynamically loaded through require.js, to ensure that all Angular 
 - [1.1.0 - 2014-02-12]:
     + Migrate project to angular-ui-router, which is much more aligned with managing complex UI state, which is required for rich desktop app. New modular way
         to declare states (routes) following the exact same pattern we use for other angular modules. See navigation documentation for more details.
-    + Integrated Grunt in the project (thanks to [Tom Lawton](https://github.com/talss89)
+    + Integrated Grunt in the project (thanks to [Tom Lawton](https://github.com/talss89) )
 
 
 ## Getting Started
@@ -85,9 +85,12 @@ Check ```releases/<platform>``` for the finished product.
 Feel free to contribute pull requests to improve this frame. Adding grunt to launch the app would be nice, adding Jasmine tests, exposing various Node-webkit features as Angular services
 would also be nice. I'll contribute a few myself as I continue the implementation of my own app for my Vibes.IO cloud platform.
 
-- Add Jasmine Tests
+DONE - Add better database abstraction for model objects
+- Add all tests
 - Integrate Server Side communication pattern (through Angular service, socket.io?)
-- Add better database abstraction for model objects
 - Expose node-webkit menubar as Angular service
 - Expose node-webkit notification area
-
+- Integrate our User/Role model with the security service
+- Add a data bootstrap mechanism to create structural data on first load
+- Provide navigation and layout samples to show the power of angular-ui-router for desktop app (nested and multi views)
+- Add socket.io support for real-time communication
