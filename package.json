@@ -2,7 +2,8 @@
   "name": "angular-desktop-app-build",
   "description": "Angular-Desktop-App Build System",
   "version": "1.1.0",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-less": "~0.8.3",

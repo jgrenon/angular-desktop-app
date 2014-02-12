@@ -12,7 +12,8 @@ define("app", [
     './filters/index',
     './services/index',
     './views/index',
-    './states/index'
+    './states/index',
+    './models/index'
 ], function (ng) {
     'use strict';
 
@@ -23,6 +24,7 @@ define("app", [
         'app.directives',
         'app.views',
         'app.states',
+        'app.models',
         'ui.bootstrap',
         "ui.bootstrap.tpls",
         'ui.router'
