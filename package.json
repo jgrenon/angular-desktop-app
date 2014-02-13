@@ -16,6 +16,6 @@
     "grunt-shell": "~0.6.4"
   },
   "scripts":{
-      "postinstall" : "./etc/scripts/postinstall"
+      "postinstall" : "node ./etc/scripts/postinstall.js"
   }
 }
