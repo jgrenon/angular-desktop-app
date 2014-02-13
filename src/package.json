@@ -27,5 +27,9 @@
     "shortid": "~2.0.0",
     "tungus": "0.0.2",
     "mongoose": "~3.8.7"
+  },
+  "scripts":{
+    "postinstall" : "node ../etc/scripts/postinstall.js"
   }
+
 }
