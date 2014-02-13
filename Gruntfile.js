@@ -42,7 +42,8 @@ module.exports = function(grunt) {
                 linux32: isLinux32,
                 linux64: isLinux64,
                 keep_nw: false,
-                zip: false
+                zip: false,
+                mac_icns:'./src/images/angular-desktop-app.icns'
             },
             src: ['./src/**/*']
         },
