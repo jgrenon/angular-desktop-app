@@ -11,6 +11,10 @@ Everything is dynamically loaded through require.js, to ensure that all Angular 
 
 # Release Notes
 
+- [1.2.0 - 2014-02-18]:
+    + Add menubar support with seamless integration into the Angular event system.
+    + Add file open dialog support in nwService with promise returning the selected file path
+    + migrate to node-webkit 0.9.1
 - [1.1.0 - 2014-02-12]:
     + Migrate project to angular-ui-router, which is much more aligned with managing complex UI state, which is required for rich desktop app. New modular way
         to declare states (routes) following the exact same pattern we use for other angular modules. See navigation documentation for more details.
@@ -71,6 +75,14 @@ nested views and multi views (multiple ui-view placeholder in the application). 
 A state is a particular location in the application UI. We have grouped all routes into the app.states module (js/states/main.js). The main file contains top-level states that can be referenced
 from anywhere in controllers by using `$state.go('signup')`. You can added more top-level states in this file or create additional files (dialogs.js, security.js) to group new state together. Just
 remember to add your file to the dependency list of the index.js file. Follow the main.js structure and your new state will be available in your application.
+
+## Menus
+
+Menubar and contextual menus are now supported directly in the nwService. The benefits of using the service are :
+
+- Capacity to create a full menu structure in a single call (see node-webkit.js service)
+- Integration with Angular by providing an event name as 'click' value. When the user click the menu, the $rootScope will $broadcast your event name, so it's easy for
+you to register $on(eventName) handlers in any of your scope. You should register your handlers in the AppCtrl for the menubar and directly in your local controller for contextual menus.
 
 ## Packaging
 
