@@ -14,7 +14,7 @@ if (isLinux32)
 if (isLinux64)
     os = "linux64";
 
-var nwVer = '0.8.4';
+var nwVer = '0.9.1';
 
 var nwExec = "";
 

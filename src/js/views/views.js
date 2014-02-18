@@ -24,7 +24,7 @@ define(['./module', '_'], function (views, _) {
                 var tmpl = templates[name];
 
                 if(!tmpl.compiled) {
-                    console.log("View isn't compiled, compiling it now");
+                    console.log("View %s isn't compiled, compiling it now", name);
                     tmpl.tmpl = jade.compile(tmpl.tmplfile);
                     tmpl.compiled = true;
                 }

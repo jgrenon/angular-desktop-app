@@ -20,6 +20,5 @@ define(['./module'], function (states) {
             controller: 'HomeCtrl'
         });
 
-        $urlRouterProvider.otherwise('/home');
     }]);
 });

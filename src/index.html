@@ -5,7 +5,8 @@
     <title>Angular Desktop App</title>
     <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
-<body>
+<body data-ng-controller="AppCtrl">
+<input style="display:none;" id="fileDialog" type="file" />
 <div ui-view></div>
 <script src="lib/requirejs/require.js" data-main="js/main.js"></script>
 </body>

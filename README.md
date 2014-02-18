@@ -86,11 +86,11 @@ Feel free to contribute pull requests to improve this frame. Adding grunt to lau
 would also be nice. I'll contribute a few myself as I continue the implementation of my own app for my Vibes.IO cloud platform.
 
 DONE - Add better database abstraction for model objects
+DONE - Expose node-webkit menubar as Angular service
+DONE - Provide navigation and layout samples to show the power of angular-ui-router for desktop app (nested and multi views)
 - Add all tests
 - Integrate Server Side communication pattern (through Angular service, socket.io?)
-- Expose node-webkit menubar as Angular service
 - Expose node-webkit notification area
 - Integrate our User/Role model with the security service
 - Add a data bootstrap mechanism to create structural data on first load
-- Provide navigation and layout samples to show the power of angular-ui-router for desktop app (nested and multi views)
 - Add socket.io support for real-time communication

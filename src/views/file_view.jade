@@ -1,0 +1,32 @@
+.page-header
+  .title Angular Desktop App
+
+.navbar.navbar-fixed-bottom.navbar-inverse(role="navigation")
+  .navbar-header
+    .navbar-brand: a(href="#"): Angular Desktop App
+  ul.nav.navbar-nav.pull-right(ng-show="authenticated")
+    li.dropdown
+      a.dropdown-toggle(href="#", data-toggle='dropdown')
+        | {{user.name}}
+        b.caret
+      ul.dropdown-menu
+        li: a(href="#") Quit
+
+.container
+  h1 Current File : {{path}}
+  table.table.table-condensed.table-stripped
+    tbody
+      tr
+        th name
+        td {{path}}
+      tr
+        th last Modified
+        td {{file.mtime}}
+      tr
+        th last Access
+        td {{file.atime}}
+      tr
+        th size
+        td {{file.size}}
+
+  button.btn.btn-primary(ui-sref="home") Back Home
