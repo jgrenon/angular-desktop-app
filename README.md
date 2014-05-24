@@ -1,6 +1,7 @@
 # Angular Desktop App
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/jgrenon/angular-desktop-app/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![endorse](https://api.coderwall.com/jgrenon/endorsecount.png)](https://coderwall.com/jgrenon)
 
 This is a simple application skeleton to create desktop application using AngularJS. This application is using node-webkit as our desktop host,
 bower to install client-side libraries as well as normal npm modules as supported by node-webkit.
