@@ -35,7 +35,7 @@ define("app", [
             root: {
                 type:'menubar',
                 items:[
-                    {label:'Menu1', items:[
+                    {label:'File', items:[
                         {label: 'New...', tooltip: 'Create a new file', click:'new-file'},
                         {label: 'Open...', tooltip: 'Open a file', click:'open-file'},
                         {label: 'Save', tooltip: 'Save a file', click:'save-file'},
@@ -48,6 +48,9 @@ define("app", [
                         {type:'separator'},
                         {label:'Find', click:'find'},
                         {label:'Replace', click:'find-replace'}
+                    ]},
+                    {label:'Social', items:[
+                        {label:'Facebook', tooltip: 'Authorize Facebook', click:'authorize-facebook'}
                     ]}
                 ]
             }

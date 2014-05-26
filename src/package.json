@@ -12,7 +12,7 @@
         "url" : "https://github.com/talss89"
     }],
   "window": {
-    "toolbar": true,
+    "toolbar": false,
     "width": 1200,
     "height": 960,
     "icon":"images/favicon.ico"
