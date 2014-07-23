@@ -12,6 +12,7 @@ define(['./module', '_'], function (views, _) {
         _.each(files, function(f) {
             templates[f.substring(0, f.length - 5)] = {
                 tmplfile:fs.readFileSync(path.resolve('./views', f)),
+                tmplpath: path.resolve('./views', f),
                 compiled:false
             };
         });
@@ -25,7 +26,7 @@ define(['./module', '_'], function (views, _) {
 
                 if(!tmpl.compiled) {
                     console.log("View %s isn't compiled, compiling it now", name);
-                    tmpl.tmpl = jade.compile(tmpl.tmplfile);
+                    tmpl.tmpl = jade.compile(tmpl.tmplfile, {'filename': tmpl.tmplpath});
                     tmpl.compiled = true;
                 }
 
