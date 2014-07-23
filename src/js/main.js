@@ -12,9 +12,8 @@ requirejs.config({
         'handlebars': '../lib/handlebars/handlebars',
         'text': '../lib/requirejs-text/text',
         '_': '../lib/lodash/dist/lodash',
-        '$': '../lib/jquery/jquery',
-        'angular-bootstrap':'../lib/angular-bootstrap/ui-bootstrap',
-        'angular-bootstrap-tmpls': '../lib/angular-bootstrap/ui-bootstrap-tpls'
+        '$': '../lib/jquery/dist/jquery',
+        'angular-bootstrap': '../lib/angular-bootstrap/ui-bootstrap-tpls'
     },
 
     /**
@@ -34,11 +33,8 @@ requirejs.config({
         '_':{
             exports:'_'
         },
-        'angular-bootstrap-tmpls':{
-            deps: ['angular']
-        },
         'angular-bootstrap':{
-            deps:['angular', '$', 'angular-bootstrap-tmpls']
+            deps: ['angular', '$']
         }
     },
 
